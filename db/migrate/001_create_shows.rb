@@ -1,3 +1,3 @@
 class CreateShows < ActiveRecord::Migration
 
-end
+end  # End of Class
