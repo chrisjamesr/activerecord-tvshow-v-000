@@ -23,8 +23,8 @@ class Show < ActiveRecord::Base
 
   def popular_shows
     Show.select do |s|
-      s.where(rating: > 5)
-    end  
+      s.where("rating > ?", 5)
+    end
   end
 
   def shows_by_alphabetical_order
